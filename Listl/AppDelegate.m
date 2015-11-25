@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-
+#import "DataController.h"
 @interface AppDelegate ()
 
 @end
@@ -17,6 +17,16 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    [ DataController prepareDocumentDirectory ];
+    
+    [[UIBarButtonItem appearanceWhenContainedIn:[UINavigationBar class], nil] setTitleTextAttributes: @{
+                                                            NSForegroundColorAttributeName: [UIColor whiteColor],
+                                                            NSFontAttributeName: [UIFont fontWithName:@"KohinoorDevanagari-Book" size:20.0f]
+                                                            }
+                                                                                            forState:UIControlStateNormal];
+    
+    
     return YES;
 }
 

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>Name</key>
+		<string>Smells Like Children</string>
+		<key>Artist</key>
+		<string>Marilyn Manson</string>
+		<key>Year</key>
+		<string>1995</string>
+		<key>Art</key>
+		<string>smellsLikeChildren.jpg</string>
+	</dict>
+	<dict>
+		<key>Name</key>
+		<string>The Downward Spiral</string>
+		<key>Artist</key>
+		<string>Nine Inch Nails</string>
+		<key>Year</key>
+		<string>1994</string>
+		<key>Art</key>
+		<string>downward_spiral.jpg</string>
+	</dict>
+	<dict>
+		<key>Name</key>
+		<string>The Rise and Fall of Ziggy Stardust and the Spiders from Mars</string>
+		<key>Artist</key>
+		<string>David Bowie</string>
+		<key>Year</key>
+		<string>1972</string>
+		<key>Art</key>
+		<string>ZiggyStardust.jpg</string>
+	</dict>
+</array>
+</plist>

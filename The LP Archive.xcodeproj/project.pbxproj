@@ -7,6 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		11003DC01BFC52D400F553C8 /* AlbumListTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 11003DBE1BFC52D400F553C8 /* AlbumListTableViewCell.m */; };
+		11003DC11BFC52D400F553C8 /* AlbumListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 11003DBF1BFC52D400F553C8 /* AlbumListTableViewCell.xib */; };
+		11003DC51BFC53FC00F553C8 /* AlbumViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11003DC41BFC53FC00F553C8 /* AlbumViewController.m */; };
+		11003DC71BFC547000F553C8 /* Album_List.plist in Resources */ = {isa = PBXBuildFile; fileRef = 11003DC61BFC547000F553C8 /* Album_List.plist */; };
+		11003DCB1BFC5AA900F553C8 /* Album.m in Sources */ = {isa = PBXBuildFile; fileRef = 11003DCA1BFC5AA900F553C8 /* Album.m */; };
+		11003DD01BFC5C1700F553C8 /* downward_spiral.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 11003DCD1BFC5C1700F553C8 /* downward_spiral.JPG */; };
+		11003DD21BFC5C1700F553C8 /* ZiggyStardust.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 11003DCF1BFC5C1700F553C8 /* ZiggyStardust.jpg */; };
+		11003DD41BFC696D00F553C8 /* smellsLikeChildren.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 11003DD31BFC696D00F553C8 /* smellsLikeChildren.jpg */; };
+		11EF359F1BFF145500A82DB2 /* DataController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11EF359E1BFF145500A82DB2 /* DataController.m */; };
+		11EF35A21BFF2CA200A82DB2 /* AddAlbumViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11EF35A11BFF2CA200A82DB2 /* AddAlbumViewController.m */; };
 		11FB216F1BFC488400D4EFC2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 11FB216E1BFC488400D4EFC2 /* main.m */; };
 		11FB21721BFC488400D4EFC2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 11FB21711BFC488400D4EFC2 /* AppDelegate.m */; };
 		11FB21751BFC488400D4EFC2 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11FB21741BFC488400D4EFC2 /* ViewController.m */; };
@@ -27,7 +37,22 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		11FB21691BFC488400D4EFC2 /* Listl.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Listl.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		11003DBD1BFC52D400F553C8 /* AlbumListTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlbumListTableViewCell.h; sourceTree = "<group>"; };
+		11003DBE1BFC52D400F553C8 /* AlbumListTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlbumListTableViewCell.m; sourceTree = "<group>"; };
+		11003DBF1BFC52D400F553C8 /* AlbumListTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AlbumListTableViewCell.xib; sourceTree = "<group>"; };
+		11003DC31BFC53FC00F553C8 /* AlbumViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlbumViewController.h; sourceTree = "<group>"; };
+		11003DC41BFC53FC00F553C8 /* AlbumViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlbumViewController.m; sourceTree = "<group>"; };
+		11003DC61BFC547000F553C8 /* Album_List.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Album_List.plist; sourceTree = "<group>"; };
+		11003DC91BFC5AA900F553C8 /* Album.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Album.h; sourceTree = "<group>"; };
+		11003DCA1BFC5AA900F553C8 /* Album.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Album.m; sourceTree = "<group>"; };
+		11003DCD1BFC5C1700F553C8 /* downward_spiral.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = downward_spiral.JPG; sourceTree = "<group>"; };
+		11003DCF1BFC5C1700F553C8 /* ZiggyStardust.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ZiggyStardust.jpg; sourceTree = "<group>"; };
+		11003DD31BFC696D00F553C8 /* smellsLikeChildren.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = smellsLikeChildren.jpg; sourceTree = "<group>"; };
+		11EF359D1BFF145500A82DB2 /* DataController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataController.h; sourceTree = "<group>"; };
+		11EF359E1BFF145500A82DB2 /* DataController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataController.m; sourceTree = "<group>"; };
+		11EF35A01BFF2CA200A82DB2 /* AddAlbumViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddAlbumViewController.h; sourceTree = "<group>"; };
+		11EF35A11BFF2CA200A82DB2 /* AddAlbumViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddAlbumViewController.m; sourceTree = "<group>"; };
+		11FB21691BFC488400D4EFC2 /* The LP Archive.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "The LP Archive.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		11FB216D1BFC488400D4EFC2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		11FB216E1BFC488400D4EFC2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		11FB21701BFC488400D4EFC2 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -37,7 +62,7 @@
 		11FB21771BFC488400D4EFC2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		11FB21791BFC488400D4EFC2 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		11FB217C1BFC488400D4EFC2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		11FB21821BFC488400D4EFC2 /* ListlTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ListlTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		11FB21821BFC488400D4EFC2 /* The LP ArchiveTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "The LP ArchiveTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		11FB21871BFC488400D4EFC2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		11FB21881BFC488400D4EFC2 /* ListlTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ListlTests.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -60,6 +85,59 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		11003DBC1BFC52A800F553C8 /* UI Files */ = {
+			isa = PBXGroup;
+			children = (
+				11FB21761BFC488400D4EFC2 /* Main.storyboard */,
+				11FB217B1BFC488400D4EFC2 /* LaunchScreen.xib */,
+				11003DBF1BFC52D400F553C8 /* AlbumListTableViewCell.xib */,
+				11003DBD1BFC52D400F553C8 /* AlbumListTableViewCell.h */,
+				11003DBE1BFC52D400F553C8 /* AlbumListTableViewCell.m */,
+			);
+			name = "UI Files";
+			sourceTree = "<group>";
+		};
+		11003DC21BFC53DB00F553C8 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				11FB21731BFC488400D4EFC2 /* ViewController.h */,
+				11FB21741BFC488400D4EFC2 /* ViewController.m */,
+				11003DC31BFC53FC00F553C8 /* AlbumViewController.h */,
+				11003DC41BFC53FC00F553C8 /* AlbumViewController.m */,
+				11EF35A01BFF2CA200A82DB2 /* AddAlbumViewController.h */,
+				11EF35A11BFF2CA200A82DB2 /* AddAlbumViewController.m */,
+			);
+			name = "View Controllers";
+			sourceTree = "<group>";
+		};
+		11003DC81BFC5A9400F553C8 /* Data Model */ = {
+			isa = PBXGroup;
+			children = (
+				11003DC91BFC5AA900F553C8 /* Album.h */,
+				11003DCA1BFC5AA900F553C8 /* Album.m */,
+			);
+			name = "Data Model";
+			sourceTree = "<group>";
+		};
+		11003DCC1BFC5BC400F553C8 /* Album Art */ = {
+			isa = PBXGroup;
+			children = (
+				11003DD31BFC696D00F553C8 /* smellsLikeChildren.jpg */,
+				11003DCD1BFC5C1700F553C8 /* downward_spiral.JPG */,
+				11003DCF1BFC5C1700F553C8 /* ZiggyStardust.jpg */,
+			);
+			name = "Album Art";
+			sourceTree = "<group>";
+		};
+		11EF359C1BFF143F00A82DB2 /* Data Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				11EF359D1BFF145500A82DB2 /* DataController.h */,
+				11EF359E1BFF145500A82DB2 /* DataController.m */,
+			);
+			name = "Data Controllers";
+			sourceTree = "<group>";
+		};
 		11FB21601BFC488400D4EFC2 = {
 			isa = PBXGroup;
 			children = (
@@ -72,8 +150,8 @@
 		11FB216A1BFC488400D4EFC2 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				11FB21691BFC488400D4EFC2 /* Listl.app */,
-				11FB21821BFC488400D4EFC2 /* ListlTests.xctest */,
+				11FB21691BFC488400D4EFC2 /* The LP Archive.app */,
+				11FB21821BFC488400D4EFC2 /* The LP ArchiveTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -81,13 +159,14 @@
 		11FB216B1BFC488400D4EFC2 /* Listl */ = {
 			isa = PBXGroup;
 			children = (
+				11EF359C1BFF143F00A82DB2 /* Data Controllers */,
+				11003DCC1BFC5BC400F553C8 /* Album Art */,
+				11003DC81BFC5A9400F553C8 /* Data Model */,
+				11003DC21BFC53DB00F553C8 /* View Controllers */,
+				11003DBC1BFC52A800F553C8 /* UI Files */,
 				11FB21701BFC488400D4EFC2 /* AppDelegate.h */,
 				11FB21711BFC488400D4EFC2 /* AppDelegate.m */,
-				11FB21731BFC488400D4EFC2 /* ViewController.h */,
-				11FB21741BFC488400D4EFC2 /* ViewController.m */,
-				11FB21761BFC488400D4EFC2 /* Main.storyboard */,
 				11FB21791BFC488400D4EFC2 /* Images.xcassets */,
-				11FB217B1BFC488400D4EFC2 /* LaunchScreen.xib */,
 				11FB216C1BFC488400D4EFC2 /* Supporting Files */,
 			);
 			path = Listl;
@@ -98,6 +177,7 @@
 			children = (
 				11FB216D1BFC488400D4EFC2 /* Info.plist */,
 				11FB216E1BFC488400D4EFC2 /* main.m */,
+				11003DC61BFC547000F553C8 /* Album_List.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -122,9 +202,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		11FB21681BFC488400D4EFC2 /* Listl */ = {
+		11FB21681BFC488400D4EFC2 /* The LP Archive */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 11FB218C1BFC488400D4EFC2 /* Build configuration list for PBXNativeTarget "Listl" */;
+			buildConfigurationList = 11FB218C1BFC488400D4EFC2 /* Build configuration list for PBXNativeTarget "The LP Archive" */;
 			buildPhases = (
 				11FB21651BFC488400D4EFC2 /* Sources */,
 				11FB21661BFC488400D4EFC2 /* Frameworks */,
@@ -134,14 +214,14 @@
 			);
 			dependencies = (
 			);
-			name = Listl;
+			name = "The LP Archive";
 			productName = Listl;
-			productReference = 11FB21691BFC488400D4EFC2 /* Listl.app */;
+			productReference = 11FB21691BFC488400D4EFC2 /* The LP Archive.app */;
 			productType = "com.apple.product-type.application";
 		};
-		11FB21811BFC488400D4EFC2 /* ListlTests */ = {
+		11FB21811BFC488400D4EFC2 /* The LP ArchiveTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 11FB218F1BFC488400D4EFC2 /* Build configuration list for PBXNativeTarget "ListlTests" */;
+			buildConfigurationList = 11FB218F1BFC488400D4EFC2 /* Build configuration list for PBXNativeTarget "The LP ArchiveTests" */;
 			buildPhases = (
 				11FB217E1BFC488400D4EFC2 /* Sources */,
 				11FB217F1BFC488400D4EFC2 /* Frameworks */,
@@ -152,9 +232,9 @@
 			dependencies = (
 				11FB21841BFC488400D4EFC2 /* PBXTargetDependency */,
 			);
-			name = ListlTests;
+			name = "The LP ArchiveTests";
 			productName = ListlTests;
-			productReference = 11FB21821BFC488400D4EFC2 /* ListlTests.xctest */;
+			productReference = 11FB21821BFC488400D4EFC2 /* The LP ArchiveTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -175,7 +255,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 11FB21641BFC488400D4EFC2 /* Build configuration list for PBXProject "Listl" */;
+			buildConfigurationList = 11FB21641BFC488400D4EFC2 /* Build configuration list for PBXProject "The LP Archive" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -188,8 +268,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				11FB21681BFC488400D4EFC2 /* Listl */,
-				11FB21811BFC488400D4EFC2 /* ListlTests */,
+				11FB21681BFC488400D4EFC2 /* The LP Archive */,
+				11FB21811BFC488400D4EFC2 /* The LP ArchiveTests */,
 			);
 		};
 /* End PBXProject section */
@@ -200,7 +280,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				11FB21781BFC488400D4EFC2 /* Main.storyboard in Resources */,
+				11003DC11BFC52D400F553C8 /* AlbumListTableViewCell.xib in Resources */,
+				11003DD41BFC696D00F553C8 /* smellsLikeChildren.jpg in Resources */,
 				11FB217D1BFC488400D4EFC2 /* LaunchScreen.xib in Resources */,
+				11003DD01BFC5C1700F553C8 /* downward_spiral.JPG in Resources */,
+				11003DD21BFC5C1700F553C8 /* ZiggyStardust.jpg in Resources */,
+				11003DC71BFC547000F553C8 /* Album_List.plist in Resources */,
 				11FB217A1BFC488400D4EFC2 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -220,6 +305,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				11FB21751BFC488400D4EFC2 /* ViewController.m in Sources */,
+				11003DC51BFC53FC00F553C8 /* AlbumViewController.m in Sources */,
+				11003DC01BFC52D400F553C8 /* AlbumListTableViewCell.m in Sources */,
+				11003DCB1BFC5AA900F553C8 /* Album.m in Sources */,
+				11EF35A21BFF2CA200A82DB2 /* AddAlbumViewController.m in Sources */,
+				11EF359F1BFF145500A82DB2 /* DataController.m in Sources */,
 				11FB21721BFC488400D4EFC2 /* AppDelegate.m in Sources */,
 				11FB216F1BFC488400D4EFC2 /* main.m in Sources */,
 			);
@@ -238,7 +328,7 @@
 /* Begin PBXTargetDependency section */
 		11FB21841BFC488400D4EFC2 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 11FB21681BFC488400D4EFC2 /* Listl */;
+			target = 11FB21681BFC488400D4EFC2 /* The LP Archive */;
 			targetProxy = 11FB21831BFC488400D4EFC2 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -349,7 +439,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Listl/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "The LP Archive";
 			};
 			name = Debug;
 		};
@@ -359,7 +449,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Listl/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "The LP Archive";
 			};
 			name = Release;
 		};
@@ -377,7 +467,7 @@
 				);
 				INFOPLIST_FILE = ListlTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "The LP ArchiveTests";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Listl.app/Listl";
 			};
 			name = Debug;
@@ -392,7 +482,7 @@
 				);
 				INFOPLIST_FILE = ListlTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "The LP ArchiveTests";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Listl.app/Listl";
 			};
 			name = Release;
@@ -400,7 +490,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		11FB21641BFC488400D4EFC2 /* Build configuration list for PBXProject "Listl" */ = {
+		11FB21641BFC488400D4EFC2 /* Build configuration list for PBXProject "The LP Archive" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				11FB218A1BFC488400D4EFC2 /* Debug */,
@@ -409,21 +499,23 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		11FB218C1BFC488400D4EFC2 /* Build configuration list for PBXNativeTarget "Listl" */ = {
+		11FB218C1BFC488400D4EFC2 /* Build configuration list for PBXNativeTarget "The LP Archive" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				11FB218D1BFC488400D4EFC2 /* Debug */,
 				11FB218E1BFC488400D4EFC2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
-		11FB218F1BFC488400D4EFC2 /* Build configuration list for PBXNativeTarget "ListlTests" */ = {
+		11FB218F1BFC488400D4EFC2 /* Build configuration list for PBXNativeTarget "The LP ArchiveTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				11FB21901BFC488400D4EFC2 /* Debug */,
 				11FB21911BFC488400D4EFC2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
