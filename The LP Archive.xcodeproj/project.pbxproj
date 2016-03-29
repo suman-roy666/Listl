@@ -243,7 +243,7 @@
 		11FB21611BFC488400D4EFC2 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0640;
+				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = sourcebits;
 				TargetAttributes = {
 					11FB21681BFC488400D4EFC2 = {
@@ -374,6 +374,7 @@
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -439,6 +440,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Listl/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.sourcebits.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "The LP Archive";
 			};
 			name = Debug;
@@ -449,6 +451,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Listl/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.sourcebits.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "The LP Archive";
 			};
 			name = Release;
@@ -467,6 +470,7 @@
 				);
 				INFOPLIST_FILE = ListlTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.sourcebits.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "The LP ArchiveTests";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Listl.app/Listl";
 			};
@@ -482,6 +486,7 @@
 				);
 				INFOPLIST_FILE = ListlTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.sourcebits.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "The LP ArchiveTests";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Listl.app/Listl";
 			};

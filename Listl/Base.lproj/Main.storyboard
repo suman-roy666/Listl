@@ -1,30 +1,40 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="STw-Wb-hfH">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="STw-Wb-hfH">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" indicatorStyle="white" dataMode="prototypes" style="plain" rowHeight="74" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="rvM-tS-KZJ">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <rect key="frame" x="20" y="72" width="560" height="520"/>
                                 <color key="backgroundColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <color key="separatorColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <color key="sectionIndexBackgroundColor" red="0.29803922772407532" green="0.29803922772407532" blue="0.29803922772407532" alpha="1" colorSpace="calibratedRGB"/>
+                                <inset key="separatorInset" minX="15" minY="0.0" maxX="15" maxY="0.0"/>
+                                <color key="sectionIndexBackgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <view key="tableFooterView" contentMode="scaleToFill" id="YIF-GK-NcF">
+                                    <rect key="frame" x="0.0" y="96" width="560" height="0.0"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <color key="backgroundColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                                </view>
                                 <prototypes>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="OOe-uk-glL">
+                                        <rect key="frame" x="0.0" y="22" width="560" height="74"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="OOe-uk-glL" id="gWo-KT-XOx">
+                                            <rect key="frame" x="0.0" y="0.0" width="527" height="73"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
                                         <connections>
@@ -32,9 +42,6 @@
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
-                                <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                                </variation>
                                 <connections>
                                     <outlet property="dataSource" destination="vXZ-lx-hvc" id="T2M-1R-cl1"/>
                                     <outlet property="delegate" destination="vXZ-lx-hvc" id="fYe-Vd-1uf"/>
@@ -42,16 +49,12 @@
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" red="0.32549019607843138" green="0.32549019607843138" blue="0.32549019607843138" alpha="1" colorSpace="calibratedRGB"/>
-                        <variation key="default">
-                            <mask key="subviews">
-                                <exclude reference="rvM-tS-KZJ"/>
-                            </mask>
-                        </variation>
-                        <variation key="widthClass=compact">
-                            <mask key="subviews">
-                                <include reference="rvM-tS-KZJ"/>
-                            </mask>
-                        </variation>
+                        <constraints>
+                            <constraint firstItem="rvM-tS-KZJ" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="8" id="B53-EB-cQt"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="rvM-tS-KZJ" secondAttribute="bottom" constant="8" id="ej7-6Z-4uN"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="rvM-tS-KZJ" secondAttribute="leading" id="k8j-jw-adA"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="rvM-tS-KZJ" secondAttribute="trailing" id="sBf-N4-h0n"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="sDN-ij-NAS">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="RDM-Lc-cO0">
@@ -60,14 +63,13 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
                         <outlet property="albumListTable" destination="rvM-tS-KZJ" id="HuR-Qa-EAF"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1482.75" y="426.5"/>
+            <point key="canvasLocation" x="1479" y="451"/>
         </scene>
         <!--Add Album View Controller-->
         <scene sceneID="yU0-sy-vjD">
@@ -78,11 +80,11 @@
                         <viewControllerLayoutGuide type="bottom" id="Jsh-vG-5aI"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="alE-rV-JVr">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Album Name" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="2Qy-HH-0mD">
-                                <rect key="frame" x="0.0" y="-30" width="97" height="30"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Album Name" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="2Qy-HH-0mD">
+                                <rect key="frame" x="173" y="222" width="111" height="30"/>
                                 <fontDescription key="fontDescription" name="KohinoorDevanagari-Book" family="Kohinoor Devanagari" pointSize="20"/>
                                 <textInputTraits key="textInputTraits"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
@@ -92,8 +94,8 @@
                                     <action selector="albumNameFieldValueChanged:" destination="L9q-KQ-Ity" eventType="editingChanged" id="z3V-jh-s6b"/>
                                 </connections>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Album Artist" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="WGQ-4p-HGV">
-                                <rect key="frame" x="0.0" y="-30" width="97" height="30"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Album Artist" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="WGQ-4p-HGV">
+                                <rect key="frame" x="173" y="260" width="97" height="30"/>
                                 <fontDescription key="fontDescription" name="KohinoorDevanagari-Book" family="Kohinoor Devanagari" pointSize="20"/>
                                 <textInputTraits key="textInputTraits"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
@@ -103,8 +105,8 @@
                                     <action selector="albumArtistFieldValueChanged:" destination="L9q-KQ-Ity" eventType="editingChanged" id="cKt-o4-pOh"/>
                                 </connections>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Release Year" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="6Ef-1L-C8l">
-                                <rect key="frame" x="0.0" y="-30" width="97" height="30"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Release Year" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="6Ef-1L-C8l">
+                                <rect key="frame" x="173" y="298" width="111" height="30"/>
                                 <fontDescription key="fontDescription" name="KohinoorDevanagari-Book" family="Kohinoor Devanagari" pointSize="20"/>
                                 <textInputTraits key="textInputTraits"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
@@ -114,8 +116,8 @@
                                     <action selector="albumYearFieldValueChanged:" destination="L9q-KQ-Ity" eventType="editingChanged" id="KfP-gA-zbB"/>
                                 </connections>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5lg-eP-hvQ">
-                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5lg-eP-hvQ">
+                                <rect key="frame" x="20" y="382" width="54" height="36"/>
                                 <fontDescription key="fontDescription" name="KohinoorDevanagari-Medium" family="Kohinoor Devanagari" pointSize="23"/>
                                 <state key="normal" title="Save">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -128,8 +130,8 @@
                                     <action selector="saveAlbumData:" destination="L9q-KQ-Ity" eventType="touchUpInside" id="vIv-bm-h44"/>
                                 </connections>
                             </button>
-                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Album Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kUB-I3-U1w">
-                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Album Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kUB-I3-U1w">
+                                <rect key="frame" x="20" y="226" width="138" height="21"/>
                                 <fontDescription key="fontDescription" name="KohinoorDevanagari-Book" family="Kohinoor Devanagari" pointSize="20"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
@@ -137,8 +139,8 @@
                                     <rect key="frame" x="16" y="280" width="139" height="33"/>
                                 </variation>
                             </label>
-                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Album Artist" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LSH-R0-PWo">
-                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Album Artist" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LSH-R0-PWo">
+                                <rect key="frame" x="20" y="264" width="123" height="21"/>
                                 <fontDescription key="fontDescription" name="KohinoorDevanagari-Book" family="Kohinoor Devanagari" pointSize="20"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
@@ -146,8 +148,8 @@
                                     <rect key="frame" x="16" y="379" width="136" height="33"/>
                                 </variation>
                             </label>
-                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Release Year" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5UL-rs-7Y6">
-                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Release Year" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5UL-rs-7Y6">
+                                <rect key="frame" x="20" y="302" width="123" height="21"/>
                                 <fontDescription key="fontDescription" name="KohinoorDevanagari-Book" family="Kohinoor Devanagari" pointSize="20"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
@@ -155,15 +157,15 @@
                                     <rect key="frame" x="16" y="478" width="139" height="33"/>
                                 </variation>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="KYq-Bi-8Bv">
-                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KYq-Bi-8Bv">
+                                <rect key="frame" x="400" y="72" width="180" height="180"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
                                     <rect key="frame" x="16" y="81" width="170" height="170"/>
                                 </variation>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dAR-Ar-S3e">
-                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dAR-Ar-S3e">
+                                <rect key="frame" x="415" y="274" width="150" height="30"/>
                                 <fontDescription key="fontDescription" name="KohinoorDevanagari-Book" family="Kohinoor Devanagari" pointSize="20"/>
                                 <state key="normal" title="Add Album Art">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -178,32 +180,6 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
-                        <variation key="default">
-                            <mask key="subviews">
-                                <exclude reference="2Qy-HH-0mD"/>
-                                <exclude reference="WGQ-4p-HGV"/>
-                                <exclude reference="6Ef-1L-C8l"/>
-                                <exclude reference="5lg-eP-hvQ"/>
-                                <exclude reference="kUB-I3-U1w"/>
-                                <exclude reference="LSH-R0-PWo"/>
-                                <exclude reference="5UL-rs-7Y6"/>
-                                <exclude reference="KYq-Bi-8Bv"/>
-                                <exclude reference="dAR-Ar-S3e"/>
-                            </mask>
-                        </variation>
-                        <variation key="widthClass=compact">
-                            <mask key="subviews">
-                                <include reference="2Qy-HH-0mD"/>
-                                <include reference="WGQ-4p-HGV"/>
-                                <include reference="6Ef-1L-C8l"/>
-                                <include reference="5lg-eP-hvQ"/>
-                                <include reference="kUB-I3-U1w"/>
-                                <include reference="LSH-R0-PWo"/>
-                                <include reference="5UL-rs-7Y6"/>
-                                <include reference="KYq-Bi-8Bv"/>
-                                <include reference="dAR-Ar-S3e"/>
-                            </mask>
-                        </variation>
                     </view>
                     <navigationItem key="navigationItem" id="3Jx-ms-LbU">
                         <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="erZ-3n-zIv">
@@ -212,7 +188,6 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
                         <outlet property="albumArt" destination="KYq-Bi-8Bv" id="9WS-eu-hcX"/>
                         <outlet property="albumArtistField" destination="WGQ-4p-HGV" id="rs2-Qu-SRs"/>
@@ -225,7 +200,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ywu-2M-IME" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1781.25" y="-352.5"/>
+            <point key="canvasLocation" x="2257.5" y="-361"/>
         </scene>
         <!--Album View Controller-->
         <scene sceneID="7eV-kK-kyk">
@@ -236,58 +211,129 @@
                         <viewControllerLayoutGuide type="bottom" id="LsX-hN-YFC"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="tnP-jL-Nrs">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="A2u-Lh-Udf" userLabel="Album Art">
-                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
-                                <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="62" y="85" width="251" height="251"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="A2u-Lh-Udf" userLabel="Album Art">
+                                <rect key="frame" x="20" y="72" width="180" height="180"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="180" id="Mc1-0l-foX"/>
+                                    <constraint firstAttribute="height" constant="180" id="nrn-Qz-iRA"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="Mc1-0l-foX"/>
+                                        <exclude reference="nrn-Qz-iRA"/>
+                                    </mask>
+                                </variation>
+                                <variation key="widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="Mc1-0l-foX"/>
+                                        <include reference="nrn-Qz-iRA"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="Mc1-0l-foX"/>
+                                        <include reference="nrn-Qz-iRA"/>
+                                    </mask>
                                 </variation>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" lineBreakMode="clip" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.40000000000000002" translatesAutoresizingMaskIntoConstraints="NO" id="Yjm-ho-cHa">
-                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" minimumScaleFactor="0.45000000000000001" translatesAutoresizingMaskIntoConstraints="NO" id="Yjm-ho-cHa">
+                                <rect key="frame" x="237" y="72" width="343" height="90"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="90" id="bEi-G3-XMy"/>
+                                </constraints>
+                                <mutableString key="text">The Boy Bands Have Won, and All the Copyists and the Tribute Bands and the TV Talent Show Producers Have Won, If We Allow Our Culture to Be Shaped by Mimicry, Whether From Lack of Ideas or From Exaggerated Respect. You Should Never Try to Freeze Culture. What You Can Do Is Recycle That Culture. Take Your Older Brother's Hand-Me-Down Jacket and Re-Style It, Re-Fashion It to the Point Where It Becomes Your Own. But Don't Just Regurgitate Creative History, or Hold Art and Music and Literature as Fixed, Untouchable and Kept Under Glass. The People Who Try to 'Guard' Any Particular Form of Music Are, Like the Copyists and Manufactured Bands, Doing It the Worst Disservice, Because the Only Thing That You Can Do to Music That Will Damage It Is Not Change It, Not Make It Your Own. Because Then It Dies, Then It's Over, Then It's Done, and the Boy Bands Have Won</mutableString>
                                 <fontDescription key="fontDescription" name="KohinoorDevanagari-Medium" family="Kohinoor Devanagari" pointSize="29"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
-                                <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="37" y="366" width="300" height="91"/>
-                                </variation>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Artist" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lXa-Pt-NJg">
-                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Morten Jørgensen og spekkhoggerne som fulgte etter danskebåten uten å røre spyet som rant fra ripa" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumScaleFactor="0.45000000000000001" translatesAutoresizingMaskIntoConstraints="NO" id="lXa-Pt-NJg">
+                                <rect key="frame" x="237" y="178" width="343" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="DSI-bL-SEg"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="KohinoorDevanagari-Medium" family="Kohinoor Devanagari" pointSize="29"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
-                                <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="37" y="479" width="300" height="40"/>
-                                </variation>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Year" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IQs-C6-j80">
-                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="0000" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IQs-C6-j80">
+                                <rect key="frame" x="237" y="246" width="120" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="I2E-Tr-Yad"/>
+                                    <constraint firstAttribute="width" constant="74" id="VlZ-8l-snr"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="KohinoorDevanagari-Medium" family="Kohinoor Devanagari" pointSize="29"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
-                                <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="37" y="552" width="300" height="40"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="I2E-Tr-Yad"/>
+                                        <exclude reference="VlZ-8l-snr"/>
+                                    </mask>
+                                </variation>
+                                <variation key="widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="I2E-Tr-Yad"/>
+                                        <include reference="VlZ-8l-snr"/>
+                                    </mask>
                                 </variation>
                             </label>
                         </subviews>
                         <color key="backgroundColor" red="0.40000000596046448" green="0.40000000596046448" blue="0.40000000596046448" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="Yjm-ho-cHa" firstAttribute="trailing" secondItem="tnP-jL-Nrs" secondAttribute="trailingMargin" id="5Bs-cs-aUV"/>
+                            <constraint firstItem="IQs-C6-j80" firstAttribute="top" secondItem="lXa-Pt-NJg" secondAttribute="bottom" constant="20" id="6dW-OB-AbY"/>
+                            <constraint firstItem="Yjm-ho-cHa" firstAttribute="leading" secondItem="tnP-jL-Nrs" secondAttribute="leadingMargin" id="9OW-pZ-t6g"/>
+                            <constraint firstItem="Yjm-ho-cHa" firstAttribute="top" secondItem="A2u-Lh-Udf" secondAttribute="bottom" constant="20" id="fup-Jp-jnj"/>
+                            <constraint firstItem="A2u-Lh-Udf" firstAttribute="top" secondItem="zIB-LY-2HN" secondAttribute="bottom" constant="21" id="geS-A9-5NU"/>
+                            <constraint firstItem="A2u-Lh-Udf" firstAttribute="centerX" secondItem="tnP-jL-Nrs" secondAttribute="centerX" id="iFB-H7-Nj4"/>
+                            <constraint firstItem="lXa-Pt-NJg" firstAttribute="trailing" secondItem="tnP-jL-Nrs" secondAttribute="trailingMargin" id="qXu-D1-OLP"/>
+                            <constraint firstItem="lXa-Pt-NJg" firstAttribute="top" secondItem="Yjm-ho-cHa" secondAttribute="bottom" constant="20" id="rnq-VC-ioi"/>
+                            <constraint firstItem="lXa-Pt-NJg" firstAttribute="leading" secondItem="tnP-jL-Nrs" secondAttribute="leadingMargin" id="shy-vJ-tSk"/>
+                            <constraint firstItem="IQs-C6-j80" firstAttribute="leading" secondItem="tnP-jL-Nrs" secondAttribute="leadingMargin" id="xpe-cP-sQW"/>
+                        </constraints>
                         <variation key="default">
-                            <mask key="subviews">
-                                <exclude reference="A2u-Lh-Udf"/>
-                                <exclude reference="Yjm-ho-cHa"/>
-                                <exclude reference="lXa-Pt-NJg"/>
-                                <exclude reference="IQs-C6-j80"/>
+                            <mask key="constraints">
+                                <exclude reference="geS-A9-5NU"/>
+                                <exclude reference="iFB-H7-Nj4"/>
+                                <exclude reference="5Bs-cs-aUV"/>
+                                <exclude reference="9OW-pZ-t6g"/>
+                                <exclude reference="fup-Jp-jnj"/>
+                                <exclude reference="qXu-D1-OLP"/>
+                                <exclude reference="rnq-VC-ioi"/>
+                                <exclude reference="shy-vJ-tSk"/>
+                                <exclude reference="6dW-OB-AbY"/>
+                                <exclude reference="xpe-cP-sQW"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
-                            <mask key="subviews">
-                                <include reference="A2u-Lh-Udf"/>
-                                <include reference="Yjm-ho-cHa"/>
-                                <include reference="lXa-Pt-NJg"/>
-                                <include reference="IQs-C6-j80"/>
+                            <mask key="constraints">
+                                <include reference="geS-A9-5NU"/>
+                                <include reference="iFB-H7-Nj4"/>
+                                <include reference="5Bs-cs-aUV"/>
+                                <include reference="9OW-pZ-t6g"/>
+                                <include reference="fup-Jp-jnj"/>
+                                <include reference="qXu-D1-OLP"/>
+                                <include reference="rnq-VC-ioi"/>
+                                <include reference="shy-vJ-tSk"/>
+                                <include reference="6dW-OB-AbY"/>
+                                <include reference="xpe-cP-sQW"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="constraints">
+                                <include reference="geS-A9-5NU"/>
+                                <include reference="iFB-H7-Nj4"/>
+                                <include reference="5Bs-cs-aUV"/>
+                                <include reference="9OW-pZ-t6g"/>
+                                <include reference="fup-Jp-jnj"/>
+                                <include reference="qXu-D1-OLP"/>
+                                <include reference="rnq-VC-ioi"/>
+                                <include reference="shy-vJ-tSk"/>
+                                <include reference="6dW-OB-AbY"/>
+                                <include reference="xpe-cP-sQW"/>
                             </mask>
                         </variation>
                     </view>
@@ -300,7 +346,6 @@
                         </barButtonItem>
                     </navigationItem>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
                         <outlet property="albumArtImageView" destination="A2u-Lh-Udf" id="Dod-RF-337"/>
                         <outlet property="albumArtistLabel" destination="lXa-Pt-NJg" id="AcF-Pk-6d8"/>
@@ -310,14 +355,13 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Qil-Yp-gAs" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2267.25" y="426.5"/>
+            <point key="canvasLocation" x="2256" y="451"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="vaU-rI-OaF">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="STw-Wb-hfH" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="k9m-Vt-v8q">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -331,7 +375,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gbK-0r-ReE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="564" y="426"/>
+            <point key="canvasLocation" x="567" y="451"/>
         </scene>
     </scenes>
 </document>
